@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="home">
+    <div id="particles-js" class="header-container">
+        <header>
+            <h2> hello my name is <span class="intro">Justin Gira </span>.</h2>
+            <h2>I'm a frontend developer.</h2>
+            <div class="btn-container">
+                <a href="#projects">View my Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </header>
+    </div>
+    <nav id="nav">
+        <a href="#nav" class="toggle-button"> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+            <ul class="nav-container">
+                <li><a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2 class="section-title"> About</h2>
+        <div class="about-container">
+            <div class="about-info">
+                My name is Justin Gira I'm 29 years old Front-End Developer based in London. I
+                was born in Philippines and raised in London. I would describe myself as a passionate developer
+                who is keen on improving and adapting my skills <span><i class="fas fa-code"></i></span>. <br>
+                I have decided to rekindle my love for code as I found it the most rewarding knowing I have
+                created a master piece.
+                Currently developing my skills in C# and improving my skills on JavaScript. <br>
+
+                Beside coding, I love going gym <span><i class="fas fa-dumbbell"></i></span>, playing basketball
+                <span><i class="fas fa-basketball-ball"></i></span> and travelling <span><i
+                        class="fas fa-plane-departure"></i></span>
+
+                <div class="cv-container">
+                    <a class="cv-btn" href="./MYCV.pdf" download>View My CV</a>
+                </div>
+            </div>
+            <div class="about-img-container">
+                <img src="./img/about-me.JPG" alt="photo of me" class="img-about">
+            </div>
+        </div>
+        <div class="skills-container">
+            <h2 class="section-title"> Tech Skills </h2>
+            <ul class="skills-content">
+                <li><i class="fab fa-html5 fa-3x"></i></li>
+                <li><i class="fab fa-css3-alt fa-3x"></i></li>
+                <li><i class="fab fa-js-square fa-3x"></i></li>
+                <li><i class="fab fa-bootstrap fa-3x"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="project">
+        <h2 class="section-title"> Projects</h2>
+        <div class="project-container">
+            <div class="card-container">
+                <div class="front"><img src="./img/project-1.png" alt="Project One"></div>
+                <div class="back">
+                    <h4>Loop Studio</h4>
+                    <p>HTML5/CSS3/JS</p>
+                </div>
+                <div class="project-btn"> <a href="https://gira1992.github.io/loop-studio/" target="_blank"> Live Demo
+                    </a></div>
+            </div>
+            <div class="card-container">
+                <div class="front"><img src="./img/project-2.png" alt="Project Two"></div>
+                <div class="back">
+                    <h4>
+                        E-COM Website</h4>
+                    <p> HTML5/CSS3/JS/Bootstrap</p>
+                    </h4>
+                </div>
+                <div class="project-btn"> <a href="https://gira1992.github.io/E-Com-Web/" target="_blank"> Live Demo
+                    </a></div>
+            </div>
+            <div class="card-container">
+                <div class="front"><img src="./img/project-3.png" alt="Project Three"></div>
+                <div class="back">
+                    <h4>Weather App</h4>
+                    <p>HTML/CSS3/JS/APi/</p>
+                </div>
+                <div class="project-btn"> <a href="https://gira1992.github.io/weatherApp/" target="_blank"> Live Demo
+                    </a></div>
+            </div>
+            <div class="card-container">
+                <div class="front"><img src="./img/project-4.png" alt="Project Four"></div>
+                <div class="back">
+                    <h4>Canada Tour Guide</h4>
+                    <p>HTML/CSS3/JS/materializeCSS</p>
+                </div>
+                <div class="project-btn"> <a href="https://gira1992.github.io/project-one/" target="_blank"> Live Demo
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title"> Contact </h2>
+        <form id="my-form" action="https://formspree.io/meqrndbb" method="POST">
+            <div class="form-detail">
+                <input type="text" placeholder="Name" id="fullName" class="name-email" name="fullName">
+            </div>
+            <div class="form-detail">
+                <input type="text" placeholder="Enter your Email" id="email" class="name-email" name="email">
+            </div>
+            <div class="form-detail">
+                <textarea name="message" class="name-email textarea" placeholder="Message" id="" cols="30"
+                    rows="10"></textarea>
+            </div>
+            <div class="form-detail submit-container">
+                <button type="submit" class="sumbit-btn" id="my-form-button"> Send </button>
+                <p id="my-form-status"></p>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="home-btn">
+            <a href="#home" class="icon-home"><i class="fas fa-angle-double-up fa-3x"></i></a>
+        </div>
+        <div class="footer-icon"><a href="https://www.linkedin.com/in/justingira/" target="_blank"><i
+                    class="fab fa-linkedin fa-3x"></i></a></div>
+        <div class="footer-icon"><a href="https://github.com/gira1992" target="_blank "><i
+                    class="fab fa-github-square fa-3x"></i>
+            </a></div>
+        <div class="footer-icon"><a href="#"><i class="fab fa-instagram-square fa-3x"></i></a></div>
+        <div class="copyright">Justin<span>Gira</span>@2021</div>
+    </footer>
+
+
+
+
+
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+
+
+
+    <!-- ADD SKILLS ON ABOUT 
+        FORM: ADJUST WIDTH AND HEIGHT(MAYBE)
+        DESIGN FORM BUTTON-->
+</body>
+
+</html>
